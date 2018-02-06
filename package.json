@@ -1,0 +1,24 @@
+{
+  "name": "follow-the-route",
+  "version": "1.0.0",
+  "description": "Exercise in the course 1dv023",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marrieto/follow-the-route.git"
+  },
+  "keywords": [
+    "git",
+    "node",
+    "express"
+  ],
+  "author": "Martin Lindahl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marrieto/follow-the-route/issues"
+  },
+  "homepage": "https://github.com/Marrieto/follow-the-route#readme"
+}
