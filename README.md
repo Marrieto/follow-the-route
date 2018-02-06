@@ -8,7 +8,7 @@ In this excercise you should train your ability to create routes in express.js a
 The assignment
 You should set up an application that follow this rules:
 
-The web application should listen to port 8000.
++ The web application should listen to port 8000.
 
 When the client asks for the root URL a static html file (index.html) should be responded to the client.
 
