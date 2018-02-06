@@ -16,12 +16,35 @@ app.use(express.static(path.join(__dirname, '/public')))
 // Set the port if it's not already set.
 process.env.PORT = process.env.PORT || 8000
 
+// Create an array of temporary products
+let products = []
+
 app.get('/products', (req, res) => {
-  res.render('products')
+  res.render('products', {product: products})
 })
 
 app.get('/product/:id', (req, res) => {
   res.render('product', {id: req.params.id})
+})
+
+app.get('/products/create', (req, res) => {
+  res.render('createProduct')
+})
+
+app.post('/products/create', (req, res) => {
+  products.push(req.body.productName)
+  res.redirect(303, '/products/')
+})
+
+app.use((req, res, next) => {
+  res.status(404)
+  res.send('404: Bad url')
+})
+
+app.use((err, req, res, next) => {
+  console.error(err.stack)
+  res.status(500)
+  res.send('500: Server is kill')
 })
 
 // Start the server

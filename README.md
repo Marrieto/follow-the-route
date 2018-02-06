@@ -18,10 +18,10 @@ You should set up an application that follow this rules:
 
 + When the client asks for the "/products/:id" URL a view should be render that output a HTML document with the hardcoded text "This is the page where the product with the id = :id is shown". If the clienten request /products/231 the text should be: "This is the page where the product with the id = 231 is shown".
 
-When the client asks for the "/products/create" URL a view should be render with a simple HTML formular should be shown. The form should have a button that posts the form to the URL described in point 7.
++ When the client asks for the "/products/create" URL a view should be render with a simple HTML formular should be shown. The form should have a button that posts the form to the URL described in point 7.
 
-When the client send a HTTP POST to "/products/create" a function should be called that redirects the client to the URL "/products".
++ When the client send a HTTP POST to "/products/create" a function should be called that redirects the client to the URL "/products".
 
-When the client calls a URL that is undefeined a 404-page should be render.
++ When the client calls a URL that is undefeined a 404-page should be render.
 
-The application should be able to handle errors and respond with a 500 status.
++ The application should be able to handle errors and respond with a 500 status.
