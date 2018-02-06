@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Marrieto/follow-the-route/issues"
   },
-  "homepage": "https://github.com/Marrieto/follow-the-route#readme"
+  "homepage": "https://github.com/Marrieto/follow-the-route#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
