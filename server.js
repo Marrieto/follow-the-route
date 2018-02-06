@@ -16,6 +16,14 @@ app.use(express.static(path.join(__dirname, '/public')))
 // Set the port if it's not already set.
 process.env.PORT = process.env.PORT || 8000
 
+app.get('/products', (req, res) => {
+  res.render('products')
+})
+
+app.get('/product/:id', (req, res) => {
+  res.render('product', {id: req.params.id})
+})
+
 // Start the server
 app.listen(process.env.PORT, () => {
   console.log(`Express server up and running on port: ${process.env.PORT}. Press CTRL + C to shut it down.`)
